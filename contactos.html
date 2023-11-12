@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="contactos.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="banner">
+        <p><h2>Contáctanos</h2></p>
+        <div>
+        <ul>
+            <li><a href="index.html">pagina principal</a></li>
+
+        <ul>
+        </div>
+        </div>
+    <div class="container-form">
+    <div class="info-form">
+    
+    <p>Escribenos al correo o al whatsapp para resolver tus dudas.</p> 
+    <a href="https://api.whatsapp.com/send/?phone=%2B56958350711&text&type=phone_number&app_absent=0"><i class="fa fa-phone"></i>
+        +56958350711
+    </a>
+    <p></p>
+    <a href="#"> <i class="fa fa-envelope"></i>
+        aquamaxpm@gmail.com
+    </a>
+    <p></p>
+    <p></p>
+    <p>O envianos tus datos y uno de nuestros ejecutivos se contactará contigo .</p>
+</div>
+<form action="#" autocomplete="off">
+<input type="text" name="nombre" placeholder="ingresa tu nombre" class="campo">
+<input type="email" name="email" placeholder="ingresa tu correo" class="campo">
+<input type="submit" name="enviar" value="enviar datos" class="btn-enviar" onclick="mostrarSweetAlert()">
+</form>
+<script>
+    function mostrarSweetAlert() {
+        Swal.fire({
+            title: 'Enviado',
+            text: 'Uno de nuestros ejecutivos se comunicarà contigo a la brevedad',
+            icon: 'success',
+            confirmButtonText: '¡Entendido!'
+        })
+        }
+</script>
+</div>
+</div>
+</body>
+</html>
